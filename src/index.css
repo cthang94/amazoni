@@ -1,21 +1,16 @@
-html {
-  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  height: 100vh;
-  font-size: 1.2rem;
-  font-family: Helvetica, Arial, sans-serif;
-}
+/** 
+#DBB98F
+#96351E
+**/
 
 .navbar-styleCT {
-  background-color: yellowgreen !important;
+  background-color: #19215e !important;
+  font-size: 18px !important;
+  color: white !important;
 }
 
-a.brandCT {
-  font-size: 2rem;
-  font-weight: bold;
+.navbar-styleCT.navbarCT {
+  float: right !important;
 }
 
 .even-highlight {
@@ -26,4 +21,36 @@ a.brandCT {
 .odd-highlight {
   font-size: 2rem;
   color: pink;
+}
+
+.logo-CT a h3 {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.3;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  background-color: #f7e6b5;
+  background: linear-gradient(to right, #613803, #ffc0c2, #fa67ab);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.logo-CT h3 span {
+  background: #e74c3c;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.8;
+}
+
+.logo-CT a {
+  text-decoration: none;
+}
+
+a {
+  color: white;
 }
