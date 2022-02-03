@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "./images/logo.png";
 
 class NavBar extends Component {
   render() {
@@ -10,9 +9,7 @@ class NavBar extends Component {
           <div className="container-fluid">
             <a className="navbar-brand m-2 brandCT" href="/#">
               <div className="logo-holder logo-CT">
-                <a href="index.html">
-                  <h3>Amazoni</h3>
-                </a>
+                <h3 className="display-3">Amazoni</h3>
               </div>
               {/* <img src={logo} className="img-fluid logoCT" alt="Amazoni"></img> */}
             </a>
@@ -36,7 +33,7 @@ class NavBar extends Component {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#index"
+                    href="/index.html"
                   >
                     Home
                   </a>

@@ -20,14 +20,14 @@ class ShoppingCart extends Component {
         id: 2,
         productName: "Cracking the Coding Interview",
         price: 59.99,
-        quantity: 20,
+        quantity: 40,
         img: img2_path,
       },
       {
         id: 3,
         productName: "Clean Code",
         price: 99.99,
-        quantity: 21,
+        quantity: 71,
         img: img3_path,
       },
       {
@@ -48,20 +48,27 @@ class ShoppingCart extends Component {
   };
   render() {
     return (
-      <div className="container-fluid">
+      <div className="row container-fluid">
         <h1 className="m-2">Shopping Cart</h1>
-        <div className="row">
-          {this.state.products.map((product) => {
-            return (
-              <Product key={product.id} product={product}>
-                <button className="btn btn-primary">Purchase</button>
-              </Product>
-            );
-          })}
-        </div>
+        {this.state.products.map((product) => {
+          return (
+            <Product
+              key={product.id}
+              product={product}
+              onIncrease={this.quantityIncrease}
+              onDecrease={this.quantityDecrease}
+            >
+              <button className="btn btn-primary">Purchase</button>
+            </Product>
+          );
+        })}
       </div>
     );
   }
+
+  quantityIncrease = () => {};
+
+  quantityDecrease = () => {};
 }
 
 export default ShoppingCart;
