@@ -6,9 +6,10 @@
   font-size: larger;
 }
 .navbar-styleCT {
-  background-color: #1488cc !important;
-  background: linear-gradient(to right, #189ce9, #353ee6, #2b32b2) !important;
-  font-size: 18px !important;
+  background-color: #1488cc;
+  background: linear-gradient(to right, #189ce9, #353ee6, #2b32b2);
+  background-size: 100%;
+  font-size: 18px;
 }
 
 .even-highlight {
