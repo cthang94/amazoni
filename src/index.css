@@ -43,3 +43,7 @@
 .logo-CT a {
   text-decoration: none;
 }
+
+.hand-icon {
+  cursor: pointer;
+}
