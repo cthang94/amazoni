@@ -7,7 +7,6 @@
 }
 .navbar-styleCT {
   background-color: #1488cc;
-  background: linear-gradient(to right, #189ce9, #353ee6, #2b32b2);
   background-size: 100%;
   font-size: 18px;
 }
@@ -31,7 +30,6 @@
   text-align: center;
   float: left;
   background-color: #673ab7;
-  background: linear-gradient(to center, #5d00ff, #230270);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
