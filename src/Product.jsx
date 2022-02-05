@@ -7,7 +7,7 @@ class Product extends Component {
   render() {
     return (
       <div className="row d-flex align-items-stretch">
-        <div className="card m-3 shadow">
+        <div className="card m-3 accordion-bodyshadow">
           <div className="card-body">
             <div className="text-muted text-start">
               Book ID <strong>#{this.state.product.id}</strong>
