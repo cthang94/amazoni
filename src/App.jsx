@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        <ShoppingCart />
+        <ShoppingCart x="calvin" />
       </React.Fragment>
     );
   }

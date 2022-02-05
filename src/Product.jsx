@@ -6,7 +6,7 @@ class Product extends Component {
   };
   render() {
     return (
-      <div className="row d-flex align-items-stretch m-auto">
+      <div className="row d-flex align-items-stretch">
         <div className="card p-3 m-3">
           <div className="card-body">
             <div className="text-muted text-start">
@@ -24,20 +24,23 @@ class Product extends Component {
               {this.state.product.productName}
             </h2>
             <img
-              className="img-fluid border\"
+              className="float-start img-fluid border-dark m-2 p-2"
               src={this.state.product.img}
               alt="Textbook"
               height="300"
               width="250"
             ></img>
-            <p class="">{this.state.product.description}</p>
+            <p className="m-2 p-2 descriptionCT">
+              <br></br>
+              {this.state.product.description}
+            </p>
           </div>
           {/* card body ends here */}
           <div className="card-footer">
-            <div className="float-start m-1 p-4">
+            <div className="float-start">
               {this.state.product.quantity}
               <span className="badge"></span>
-              <div className="btn-group m-2">
+              <div className="btn-group m-2 p-3">
                 <button
                   className="btn btn-outline-success"
                   onClick={() => {

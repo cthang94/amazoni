@@ -7,8 +7,8 @@ class NavBar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-styleCT">
           <div className="container-fluid">
-            <a className="navbar-brand m-2 brandCT" href="/#">
-              <div className="logo-holder logo-CT">
+            <a className="navbar-brand brandCT" href="/#">
+              <div className="logo-holder logo-CT m-2">
                 <h3 className="display-3">Amazoni</h3>
               </div>
               {/* <img src={logo} className="img-fluid logoCT" alt="Amazoni"></img> */}
@@ -28,7 +28,7 @@ class NavBar extends Component {
               className="collapse navbar-collapse navbarCT"
               id="navbarTogglerDemo02"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-auto">
                 <li className="nav-item p-2 m-2">
                   <a
                     className="nav-link active"
@@ -40,21 +40,21 @@ class NavBar extends Component {
                 </li>
                 <li className="nav-item p-2 m-2">
                   <a className="nav-link" href="/#">
-                    Link
+                    Shop
                   </a>
                 </li>
                 <li className="nav-item p-2 m-2">
                   <a className="nav-link" href="/#">
-                    Link
+                    About
                   </a>
                 </li>
                 <li className="nav-item p-2 m-2">
                   <a className="nav-link" href="/#">
-                    Link
+                    Contact
                   </a>
                 </li>
               </ul>
-              <form className="d-flex p-2 m-2">
+              <form className="d-flex p-2 me-2">
                 <input
                   className="form-control me-2"
                   type="search"

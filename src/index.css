@@ -2,9 +2,12 @@
 #DBB98F
 #96351E
 **/
-
+.descriptionCT {
+  font-size: larger;
+}
 .navbar-styleCT {
-  background-color: #ffc0c2 !important;
+  background-color: #1488cc !important;
+  background: linear-gradient(to right, #189ce9, #353ee6, #2b32b2) !important;
   font-size: 18px !important;
 }
 
@@ -26,8 +29,8 @@
   text-decoration: none;
   text-align: center;
   float: left;
-  background-color: #f7e6b5;
-  background: linear-gradient(to right, #613803, #ffc0c2, #fa67ab);
+  background-color: #673ab7;
+  background: linear-gradient(to center, #5d00ff, #230270);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -46,4 +49,8 @@
 
 .hand-icon {
   cursor: pointer;
+}
+
+.cardCT {
+  background-color: #536976;
 }
