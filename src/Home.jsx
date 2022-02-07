@@ -1,0 +1,13 @@
+import react from "react";
+
+class Home {
+  render() {
+    return (
+      <main style={{ padding: "1rem 0" }}>
+        <h2>Home</h2>
+      </main>
+    );
+  }
+}
+
+export default Home;

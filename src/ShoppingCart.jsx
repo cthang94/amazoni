@@ -82,6 +82,15 @@ class ShoppingCart extends Component {
     );
   }
 
+  componentDidUpdate = (prevProps, prevState) => {};
+
+  componentDidCatch = (error, info) => {
+    console.log(error, info);
+    localStorage.lastError = `${error}\n${JSON.stringify(info)}`;
+  };
+
+  componentWillUnmount = () => {};
+
   quantityIncrease = (product, maxValue) => {
     let allProducts = [...this.state.products];
     let index = allProducts.indexOf(product);

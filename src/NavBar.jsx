@@ -7,7 +7,7 @@ class NavBar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-styleCT">
           <div className="container-fluid">
-            <a className="navbar-brand brandCT" href="/#">
+            <a className="navbar-brand brandCT" href="/index.html">
               <div className="logo-holder logo-CT m-2">
                 <h3 className="display-3">Amazoni</h3>
               </div>
@@ -30,41 +30,48 @@ class NavBar extends Component {
             >
               <ul className="navbar-nav me-auto">
                 <li className="nav-item p-2 m-2">
-                  <a
+                  <Link
+                    to="/home"
                     className="nav-link active"
                     aria-current="page"
-                    href="/index.html"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item p-2 m-2">
-                  <a className="nav-link" href="/#">
-                    Shop
-                  </a>
+                  <Link to="/cart" className="nav-link">
+                    Cart
+                  </Link>
                 </li>
                 <li className="nav-item p-2 m-2">
-                  <a className="nav-link" href="/#">
+                  <Link to="/about" className="nav-link">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item p-2 m-2">
-                  <a className="nav-link" href="/#">
+                  <Link to="/contact" className="nav-link">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <form className="d-flex p-2 me-2">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
+              <div className="">
+                <div className="nav-item login float-start text-decoration-none p-2">
+                  <Link to="/login" className="nav-link">
+                    Login
+                  </Link>
+                </div>
+                <form className="d-flex p-2 me-2">
+                  <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button className="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </nav>

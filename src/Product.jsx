@@ -4,10 +4,23 @@ class Product extends Component {
   state = {
     product: this.props.product,
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      product: this.props.product,
+    };
+  }
+
+  // executes when delete occurs
+  componentWillUnmount = (product) => {};
+
+  componentDidMount = (product) => {};
+
   render() {
     return (
       <div className="row d-flex align-items-stretch">
-        <div className="card m-3 accordion-bodyshadow">
+        <div className="card m-3 accordion-body shadow">
           <div className="card-body">
             <div className="text-muted text-start">
               Book ID <strong>#{this.state.product.id}</strong>
@@ -20,7 +33,7 @@ class Product extends Component {
                 <i className="fa fa-times"></i>
               </span>
             </div>
-            <h2 className="p-3 border-top text-center text-decoration-underline card-title">
+            <h2 className="p-3 border-top text-center text-decoration-bold card-title">
               {this.state.product.productName}
             </h2>
             <img
