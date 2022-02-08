@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
-import CustomersList from "./CustomersList";
 import ShoppingCart from "./Home";
 import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
-import Product from "./Product";
 import NotFoundPage from "./NotFoundPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";

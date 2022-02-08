@@ -21,9 +21,7 @@ class Home extends Component {
               onIncrease={this.quantityIncrease}
               onDecrease={this.quantityDecrease}
               onDelete={this.handleDelete}
-            >
-              <button className="btn btn-primary">Add to Cart</button>
-            </Product>
+            ></Product>
           );
         })}
       </div>

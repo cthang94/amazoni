@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 class Product extends Component {
   constructor(props) {
@@ -10,11 +10,15 @@ class Product extends Component {
 
   componentDidMount = (product) => {};
 
+  addToCart = (event) => {
+    const [qty, setQty] = useState(0);
+  };
+
   render() {
     return (
-      <div className="col-lg-6 d-flex align-items-stretch">
-        <div className="card m-3 accordion-body shadow">
-          <div className="card-body">
+      <div className="d-flex align-items-stretch row align-items-center">
+        <div className="card m-3 accordion-body shadow col">
+          <div className=" card-body">
             <div className="text-muted text-start">
               Book ID <strong>#{this.state.product.id}</strong>
               <span
@@ -75,7 +79,11 @@ class Product extends Component {
             <div className="float-end ">
               <p className="m-2">Price: ${this.state.product.price}</p>
 
-              <div className="m-2">{this.props.children}</div>
+              <div className="m-2">
+                <button className="btn btn-primary" onClick={this.addToCart}>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
