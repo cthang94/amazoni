@@ -14,13 +14,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <NavBar />
+        <Home />
+
         <div className="container-fluid">
           <Routes>
             <Route path="/" exact component={About} />
             <Route path="*" component={NotFoundPage} />
           </Routes>
         </div>
-        <Login />
         <Footer />
       </BrowserRouter>
     );

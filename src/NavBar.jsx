@@ -24,10 +24,7 @@ class NavBar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div
-              className="collapse navbar-collapse navbarCT"
-              id="navbarTogglerDemo02"
-            >
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav me-auto">
                 <li className="nav-item p-2 m-2">
                   <Link
@@ -54,20 +51,20 @@ class NavBar extends Component {
                   </Link>
                 </li>
               </ul>
-              <div className="">
-                <div className="nav-item login float-start text-decoration-none p-2">
-                  <Link to="/login" className="nav-link">
+              <div className="nav-item">
+                <div className="nav-link login float-start text-decoration-none m-2">
+                  <Link to="/login" className="text-decoration-none">
                     Login
                   </Link>
                 </div>
-                <form className="d-flex p-2 me-2">
+                <form className="d-flex p-2 mx-1">
                   <input
-                    className="form-control me-2"
+                    className="form-control mx-1"
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button className="btn btn-outline-success" type="submit">
+                  <button className="btn btn-lg  btn-info" type="submit">
                     Search
                   </button>
                 </form>

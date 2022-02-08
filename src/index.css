@@ -7,6 +7,7 @@
 }
 .navbar-styleCT {
   font-size: 1.3 rem;
+  background-color: #e0eaf4 !important;
 }
 
 .logo-CT h3 {
@@ -14,8 +15,7 @@
   font-weight: bolder;
   font-size: 30px;
   text-decoration: solid;
-  background-color: #cea800;
-  background-size: 100%;
+  background-color: #005099;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

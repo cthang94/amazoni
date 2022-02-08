@@ -5,33 +5,33 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="b-example-divider"></div>
+        <div className="b-example-divider"></div>
 
-        <div class="container">
-          <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">
+        <div className="container">
+          <footer className="py-3 my-4">
+            <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+              <li className="nav-item">
+                <a href="#" className="nav-link px-2 text-muted">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">
+              <li className="nav-item">
+                <a href="#" className="nav-link px-2 text-muted">
                   Cart
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">
+              <li className="nav-item">
+                <a href="#" className="nav-link px-2 text-muted">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">
+              <li className="nav-item">
+                <a href="#" className="nav-link px-2 text-muted">
                   Contact
                 </a>
               </li>
             </ul>
-            <p class="text-center text-muted">&copy; 2021 Amazoni Inc</p>
+            <p className="text-center text-muted">&copy; 2021 Amazoni Inc</p>
           </footer>
         </div>
       </React.Fragment>
