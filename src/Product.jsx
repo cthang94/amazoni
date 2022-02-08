@@ -1,19 +1,13 @@
 import React, { Component } from "react";
+import db from "./store-db.json";
 
 class Product extends Component {
-  state = {
-    product: this.props.product,
-  };
-
   constructor(props) {
     super(props);
     this.state = {
       product: this.props.product,
     };
   }
-
-  // executes when delete occurs
-  componentWillUnmount = (product) => {};
 
   componentDidMount = (product) => {};
 
@@ -36,16 +30,9 @@ class Product extends Component {
             <h2 className="p-3 border-top text-center text-decoration-bold card-title">
               {this.state.product.productName}
             </h2>
-            <img
-              className="float-start img-fluid border-dark m-2 p-2"
-              src={this.state.product.img}
-              alt="Textbook"
-              height="300"
-              width="250"
-            ></img>
             <p className="m-2 p-2 descriptionCT">
               <br></br>
-              {this.state.product.description}
+              {this.state.product.productDescription}
             </p>
           </div>
           {/* card body ends here */}

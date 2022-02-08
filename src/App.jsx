@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
 import CustomersList from "./CustomersList";
-import ShoppingCart from "./ShoppingCart";
+import ShoppingCart from "./Home";
 import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
+import Product from "./Product";
 import NotFoundPage from "./NotFoundPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";
@@ -13,13 +14,13 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <NavBar />
-        <Home />
-
-        <div className="container-fluid">
+        <div className="">
+          <NavBar />
           <Routes>
-            <Route path="/" exact component={About} />
-            <Route path="*" component={NotFoundPage} />
+            <Route path="/" exact element={<Home />} />
+            <Route path="/cart" exact element={<ShoppingCart />} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/*" element={<NotFoundPage />} />
           </Routes>
         </div>
         <Footer />

@@ -1,0 +1,44 @@
+{
+ "products": [
+  {
+   "id": 1,
+   "productName": "Introduction to Algorithms",
+   "price": 125.99,
+   "color": "blue",
+   "productMaterial": "cashmere",
+   "productDescription": "Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor.  Introduction to Algorithms uniquely combines rigor and comprehensiveness. The book covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and can be used as a unit of study. The algorithms are described in English and in a pseudocode designed to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor."
+  },
+  {
+   "id": 2,
+   "productName": "Cracking the Coding Interview",
+   "price": 59.99,
+   "quantity": 0,
+   "img": "./images/id2_bookImg.jpeg",
+   "description": "I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.\nCracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book.\n Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.\nThese interview questions are real; they are not pulled out of computer science textbooks. They reflect what's truly being asked at the top companies, so that you can be as prepared as possible."
+  },
+  {
+   "id": 3,
+   "productName": "Clean Code",
+   "price": 99.99,
+   "quantity": 0,
+   "img": "./images/id3_bookImg.jpeg",
+   "description": "Even bad code can function. But if code isnt clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesnt have to be that way.\nNoted software expert Robert C. Martin, presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin, who has helped bring agile principles from a practitioners point of view to tens of thousands of programmers, has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of software craftsman, and make you a better programmer―but only if you work at it.\nWhat kind of work will you be doing? You will be reading code―lots of code. And you will be challenged to think about whats right about that code, and whats wrong with it. More importantly you will be challenged to reassess your professional values and your commitment to your craft. Clean Code is divided into three parts. The first describes the principles, patterns, and practices of writing clean code. The second part consists of several case studies of increasing complexity. Each case study is an exercise in cleaning up code―of transforming a code base that has some problems into one that is sound and efficient. The third part is the payoff: a single chapter containing a list of heuristics and “smells” gathered while creating the case studies. The result is a knowledge base that describes the way we think when we write, read, and clean code."
+  },
+  {
+   "id": 4,
+   "productName": "Think Like a Programmer",
+   "price": 24.99,
+   "quantity": 0,
+   "img": "./images/id4_bookImg.jpeg",
+   "description": "The real challenge of programming isnt learning a language's syntax—it's learning to creatively solve problems so you can build something great. In this one-of-a-kind text, author V. Anton Spraul breaks down the ways that programmers solve problems and teaches you what other introductory books often ignore: how to Think Like a Programmer. Each chapter tackles a single programming concept, like classes, pointers, and recursion, and open-ended exercises throughout challenge you to apply your knowledge."
+  },
+  {
+   "id": 5,
+   "productName": "Learning SQL",
+   "price": 42.99,
+   "quantity": 0,
+   "img": "./images/id5_bookImg.jpeg",
+   "description": "As data floods into your company, you need to put it to work right away—and SQL is the best tool for the job. With the latest edition of this introductory guide, author Alan Beaulieu helps developers get up to speed with SQL fundamentals for writing database applications, performing administrative tasks, and generating reports. Youll find new chapters on SQL and big data, analytic functions, and working with very large databases.  Each chapter presents a self-contained lesson on a key SQL concept or technique using numerous illustrations and annotated examples. Exercises let you practice the skills you learn. Knowledge of SQL is a must for interacting with data. With Learning SQL, youll quickly discover how to put the power and flexibility of this language to work."
+  }
+ ]
+}

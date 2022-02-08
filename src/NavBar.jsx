@@ -5,9 +5,9 @@ class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-styleCT">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-styleCT ">
           <div className="container-fluid">
-            <a className="navbar-brand brandCT" href="/index.html">
+            <a className="navbar-brand brandCT" href="/">
               <div className="logo-holder logo-CT m-2">
                 <h3 className="display-3">Amazoni</h3>
               </div>
@@ -27,11 +27,7 @@ class NavBar extends Component {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav me-auto">
                 <li className="nav-item p-2 m-2">
-                  <Link
-                    to="/home"
-                    className="nav-link active"
-                    aria-current="page"
-                  >
+                  <Link to="/" className="nav-link active" aria-current="page">
                     Home
                   </Link>
                 </li>
@@ -52,14 +48,14 @@ class NavBar extends Component {
                 </li>
               </ul>
               <div className="nav-item">
-                <div className="nav-link login float-start text-decoration-none m-2">
-                  <Link to="/login" className="text-decoration-none">
+                <div className="nav-link login float-start text-decoration-none">
+                  <Link to="/login" className="nav-link">
                     Login
                   </Link>
                 </div>
-                <form className="d-flex p-2 mx-1">
+                <form className="d-flex">
                   <input
-                    className="form-control mx-1"
+                    className="form-control "
                     type="search"
                     placeholder="Search"
                     aria-label="Search"

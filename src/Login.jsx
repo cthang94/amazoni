@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
-import ShoppingCart from "./ShoppingCart";
 
 class Login extends Component {
   constructor(props) {
