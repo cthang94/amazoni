@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import db from "./store-db.json";
 
 class Product extends Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class Product extends Component {
 
   render() {
     return (
-      <div className="row d-flex align-items-stretch">
+      <div className="col-lg-6 d-flex align-items-stretch">
         <div className="card m-3 accordion-body shadow">
           <div className="card-body">
             <div className="text-muted text-start">
@@ -30,9 +29,22 @@ class Product extends Component {
             <h2 className="p-3 border-top text-center text-decoration-bold card-title">
               {this.state.product.productName}
             </h2>
+            <div className="productImg float-start">
+              <img
+                height="250"
+                width="250"
+                src={this.state.product.img}
+                className="border-3 m-2 p-2"
+                alt="imgOfProduct"
+              ></img>
+            </div>
             <p className="m-2 p-2 descriptionCT">
+              <br />
+              Type: {this.state.product.department}
               <br></br>
-              {this.state.product.productDescription}
+              Product Material: {this.state.product.productMaterial}
+              <br></br>
+              Description: {this.state.product.productDescription}
             </p>
           </div>
           {/* card body ends here */}

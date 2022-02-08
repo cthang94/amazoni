@@ -1,7 +1,5 @@
-import { dblClick } from "@testing-library/user-event/dist/click";
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import Product from "./Product";
-import * as db from "./db.json";
 
 class Home extends Component {
   constructor(props) {
@@ -24,7 +22,7 @@ class Home extends Component {
               onDecrease={this.quantityDecrease}
               onDelete={this.handleDelete}
             >
-              <button className="btn btn-primary">Purchase</button>
+              <button className="btn btn-primary">Add to Cart</button>
             </Product>
           );
         })}
@@ -40,19 +38,26 @@ class Home extends Component {
   };
 
   // executes after constructor & render method
+  // componentDidMount = async () => {
+  //   console.log("component did mount - home");
+  //   fetch("http://localhost:8000/products")
+  //     .then((res) => {
+  //       console.log("component did mount2 - home", res);
+
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       console.log("component did mount3 - home", data);
+
+  //       this.setState({ products: data });
+  //     });
+  // };
+
   componentDidMount = async () => {
-    console.log("component did mount - home");
-    fetch("http://localhost:8000/products")
-      .then((res) => {
-        console.log("component did mount2 - home", res);
-
-        return res.json();
-      })
-      .then((data) => {
-        console.log("component did mount3 - home", data);
-
-        this.setState({ products: data });
-      });
+    console.log("component did mount");
+    const response = await fetch("http://localhost:8000/products");
+    const data = await response.json();
+    this.setState({ products: data });
   };
 
   quantityIncrease = (product, maxValue) => {

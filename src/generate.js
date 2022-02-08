@@ -16,6 +16,7 @@ module.exports = function () {
         quantity: 0,
         productMaterial: faker.commerce.productMaterial(),
         productDescription: faker.commerce.productDescription(),
+        img: faker.image.avatar(),
       };
     }),
   };
