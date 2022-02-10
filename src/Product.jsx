@@ -11,7 +11,7 @@ class Product extends Component {
   componentDidMount = (product) => {};
 
   addToCart = (event) => {
-    const [qty, setQty] = useState(0);
+    console.log("EVENT 1");
   };
 
   render() {

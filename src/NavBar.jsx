@@ -60,7 +60,7 @@ class NavBar extends Component {
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button className="btn btn-lg  btn-info" type="submit">
+                  <button className="btn btn-lg btn-info" type="submit">
                     Search
                   </button>
                 </form>

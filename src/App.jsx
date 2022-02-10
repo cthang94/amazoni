@@ -18,6 +18,7 @@ class App extends Component {
             <Route path="/" exact element={<Home />} />
             <Route path="/cart" exact element={<ShoppingCart />} />
             <Route path="/about" exact element={<About />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/*" element={<NotFoundPage />} />
           </Routes>
         </div>
