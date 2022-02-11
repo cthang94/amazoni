@@ -10,9 +10,9 @@ class ShoppingCart extends Component {
 
   render() {
     return (
-      <div>
-        <h4>Shopping Cart</h4>
-      </div>
+      <main style={{ padding: "1rem 0" }}>
+        <h2>Shopping Cart</h2>
+      </main>
     );
   }
 }

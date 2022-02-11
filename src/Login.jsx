@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import NavBar from "./NavBar";
 
 class Login extends Component {
   constructor(props) {
@@ -11,44 +10,54 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="col-lg-9 m-auto p-3">
-        <h1 className="m-1 p-2 border-bottom">Login</h1>
-        {/* Beginning of Email */}
-        <div className="form-group form-row m-1 p-1">
-          <label className="col-lg-4 m-1">Email:</label>
-          <input
-            type="text"
-            className="form-control"
-            value={this.state.email}
-            onChange={(event) => {
-              this.setState({ email: event.target.value });
-            }}
-          ></input>
+      <React.Fragment>
+        <div class="col-md-10 mx-auto">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                value={this.state.email}
+                onChange={(event) => {
+                  this.setState({ email: event.target.value });
+                }}
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                value={this.state.password}
+                onChange={(event) => {
+                  this.setState({ email: event.target.password });
+                }}
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+            </div>
+            <button
+              class="w-100 btn btn-lg btn-primary"
+              type="submit"
+              onClick={this.onLoginClick}
+            >
+              Sign up
+            </button>
+            <hr class="my-4" />
+            <small class="text-muted">
+              By clicking Sign up, you agree to the terms of use.
+            </small>
+          </form>
         </div>
-        {/* Beginning of password */}
-        <div className="form-group form-row m-1 p-1">
-          <label className="col-lg-4 m-1">Password:</label>
-          <input
-            type="password"
-            z
-            className="form-control"
-            value={this.state.password}
-            onChange={(event) => {
-              this.setState({ email: event.target.password });
-            }}
-          ></input>
-        </div>
-        {/* Beginning of Login */}
-        <div className="text-end">
-          {this.state.message}
-          <button
-            className="btn btn-primary m-2 p-2"
-            onClick={this.onLoginClick}
-          >
-            Login
-          </button>
-        </div>
-      </div>
+      </React.Fragment>
     );
   }
 

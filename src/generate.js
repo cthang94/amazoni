@@ -3,7 +3,7 @@
  * @returns an object containing several fields and values
  */
 
-module.exports = function () {
+module.exports = () => {
   const lodash = require("lodash");
   const { faker } = require("@faker-js/faker");
   return {
