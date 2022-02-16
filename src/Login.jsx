@@ -4,19 +4,21 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOn: "false",
+      email: props.email,
+      password: props.password,
     };
+    this.onLoginClick = this.onLoginClick.bind(this);
   }
 
   render() {
     return (
       <React.Fragment>
-        <div class="col-md-10 mx-auto">
-          <form class="p-4 p-md-5 border rounded-3 bg-light">
-            <div class="form-floating mb-3">
+        <div className="col-md-10 mx-auto">
+          <form className="p-4 p-md-5 border rounded-3 bg-light">
+            <div className="form-floating mb-3">
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="floatingInput"
                 placeholder="name@example.com"
                 value={this.state.email}
@@ -24,12 +26,12 @@ class Login extends Component {
                   this.setState({ email: event.target.value });
                 }}
               />
-              <label for="floatingInput">Email address</label>
+              <label htmlFor="floatingInput">Email address</label>
             </div>
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="password"
-                class="form-control"
+                className="form-control"
                 id="floatingPassword"
                 placeholder="Password"
                 value={this.state.password}
@@ -37,23 +39,23 @@ class Login extends Component {
                   this.setState({ email: event.target.password });
                 }}
               />
-              <label for="floatingPassword">Password</label>
+              <label htmlFor="floatingPassword">Password</label>
             </div>
-            <div class="checkbox mb-3">
+            <div className="checkbox mb-3">
               <label>
                 <input type="checkbox" value="remember-me" /> Remember me
               </label>
             </div>
             <button
-              class="w-100 btn btn-lg btn-primary"
+              className="w-100 btn btn-lg btn-primary"
               type="submit"
               onClick={this.onLoginClick}
             >
-              Sign up
+              Login
             </button>
-            <hr class="my-4" />
-            <small class="text-muted">
-              By clicking Sign up, you agree to the terms of use.
+            <hr className="my-4" />
+            <small className="text-muted">
+              Login using your assigned email address and password
             </small>
           </form>
         </div>
@@ -61,16 +63,13 @@ class Login extends Component {
     );
   }
 
-  onLoginClick = () => {
-    if (this.state.email === "admin" && this.state.password === "admin123") {
-      this.setState({
-        message: <span className="text-success">Successfully logged in!</span>,
-      });
-    } else {
-      this.setState({
-        message: <span className="text-danger">Failed to login!</span>,
-      });
-    }
+  onLoginClick = (event) => {
+    event.preventDefault();
+    this.setState({
+      email: this.props.state.email,
+      password: this.props.state.password,
+    });
+    console.log(this.props.state.email);
   };
 }
 

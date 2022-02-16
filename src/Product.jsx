@@ -10,9 +10,7 @@ class Product extends Component {
 
   componentDidMount = (product) => {};
 
-  addToCart = (event) => {
-    console.log("EVENT 1");
-  };
+  onAdd = (product) => {};
 
   render() {
     return (
@@ -80,7 +78,12 @@ class Product extends Component {
               <p className="m-2">Price: ${this.state.product.price}</p>
 
               <div className="m-2">
-                <button className="btn btn-primary" onClick={this.addToCart}>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => {
+                    this.props.onAdd(this.state.product);
+                  }}
+                >
                   Add to Cart
                 </button>
               </div>

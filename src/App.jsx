@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
-import ShoppingCart from "./Home";
+import ShoppingCart from "./ShoppingCart";
 import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
