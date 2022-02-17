@@ -14,7 +14,7 @@ class Product extends Component {
 
   render() {
     return (
-      <div className="d-flex align-items-stretch row align-items-center">
+      <div className="d-flex align-items-stretch align-items-center">
         <div className="card m-3 accordion-body shadow col">
           <div className=" card-body">
             <div className="text-muted text-start">

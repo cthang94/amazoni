@@ -52,20 +52,20 @@ class Home extends Component {
   // };
 
   shuffleProducts = (productsArray) => {
-    for (let i = productsArray.length - 1; i > 0; --i) {
-      let j = Math.floor(Math.random() * (i + 1));
-      let t = productsArray[i];
-      productsArray[i] = productsArray[j];
-      productsArray[j] = t;
-    }
-    return productsArray;
+    console.log(productsArray[0]);
+    // for (let i = productsArray.length - 1; i > 0; --i) {
+    //   let j = Math.floor(Math.random() * (i + 1));
+    //   let t = productsArray[i];
+    //   productsArray[i] = productsArray[j];
+    //   productsArray[j] = t;
+    // }
+    // return productsArray;
   };
 
   componentDidMount = async () => {
     let url = "https://amazoni-backend.herokuapp.com/products";
     const response = await fetch(url);
     const data = await response.json();
-    console.log(`component mount`, data);
     this.setState({ products: this.shuffleProducts(data.products) });
   };
 
