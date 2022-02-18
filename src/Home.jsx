@@ -17,7 +17,7 @@ class Home extends Component {
           return (
             <Product
               key={this.state.products.id}
-              product={this.state.products.product}
+              product={this.state.products}
               onIncrease={this.quantityIncrease}
               onDecrease={this.quantityDecrease}
               onDelete={this.handleDelete}
@@ -52,7 +52,6 @@ class Home extends Component {
   // };
 
   shuffleProducts = (productsArray) => {
-    console.log(productsArray[0]);
     for (let i = productsArray.length - 1; i > 0; --i) {
       let j = Math.floor(Math.random() * (i + 1));
       let t = productsArray[i];
@@ -66,7 +65,7 @@ class Home extends Component {
     let url = "https://amazoni-backend.herokuapp.com/products";
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({ products: this.shuffleProducts(data.products) });
+    this.setState({ products: this.shuffleProducts(data) });
   };
 
   quantityIncrease = (product, maxValue) => {
