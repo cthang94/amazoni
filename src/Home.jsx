@@ -16,7 +16,7 @@ class Home extends Component {
         {this.state.products.map((data, key) => {
           return (
             <Product
-              key={this.state.products.id}
+              key={this.state.products.key}
               product={this.state.products}
               onIncrease={this.quantityIncrease}
               onDecrease={this.quantityDecrease}
