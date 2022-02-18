@@ -16,8 +16,8 @@ class Home extends Component {
         {this.state.products.map((data, key) => {
           return (
             <Product
-              key={this.state.products.key}
-              product={this.state.products.product}
+              key={this.state.products}
+              product={this.state.products[key]}
               onIncrease={this.quantityIncrease}
               onDecrease={this.quantityDecrease}
               onDelete={this.handleDelete}
@@ -65,7 +65,8 @@ class Home extends Component {
     let url = "https://amazoni-backend.herokuapp.com/products";
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({ products: this.shuffleProducts(data) });
+    console.log(data.product);
+    this.setState({ products: this.shuffleProducts(data.products) });
   };
 
   quantityIncrease = (product, maxValue) => {
