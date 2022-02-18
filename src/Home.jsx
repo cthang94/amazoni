@@ -17,7 +17,7 @@ class Home extends Component {
           return (
             <Product
               key={this.state.products.key}
-              product={this.state.products}
+              product={this.state.products.product}
               onIncrease={this.quantityIncrease}
               onDecrease={this.quantityDecrease}
               onDelete={this.handleDelete}
